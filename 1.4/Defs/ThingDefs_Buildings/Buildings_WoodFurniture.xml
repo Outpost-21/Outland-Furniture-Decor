@@ -1,0 +1,1325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef ParentName="OutlandArtableBedBase">
+		<defName>Outland_BedDouble</defName>
+		<label>double bed</label>
+		<description>A simple double-wide bed that fits two people.</description>
+		<techLevel>Medieval</techLevel>
+		<graphicData>
+			<texPath>Outland/FurnitureAndDecor/Buildings/WoodFurniture/DoubleBed</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(4.05,4.05)</drawSize>
+		</graphicData>
+		<size>(2,2)</size>
+		<uiIconScale>0.90</uiIconScale>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<fillPercent>0.4</fillPercent>
+		<pathCost>60</pathCost>
+		<leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
+		<staticSunShadowHeight>0.15</staticSunShadowHeight>
+		<castEdgeShadows>True</castEdgeShadows>
+		<statBases>
+			<MaxHitPoints>195</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToBuild>1400</WorkToBuild>
+			<Mass>75</Mass>
+			<Comfort>0.85</Comfort>
+			<Beauty>8</Beauty>
+			<BedRestEffectiveness>1</BedRestEffectiveness>
+			<ImmunityGainSpeedFactor>1.07</ImmunityGainSpeedFactor>
+			<SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+		</statBases>
+		<building>
+			<bed_showSleeperBody>False</bed_showSleeperBody>
+			<bed_healPerDay>5</bed_healPerDay>
+			<paintable>true</paintable>
+		</building>
+		<costStuffCount>85</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>Outland_SubCatFurnitureWood</subCategory>
+				<showOnlyInCategory>true</showOnlyInCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="OutlandArtableBedBase">
+		<defName>Outland_BedSingle</defName>
+		<label>bed</label>
+		<description>A cozy mattress and sheets on a frame for resting.</description>
+		<techLevel>Medieval</techLevel>
+		<graphicData>
+			<texPath>Outland/FurnitureAndDecor/Buildings/WoodFurniture/SingleBed</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<size>(1,2)</size>
+		<uiIconScale>0.90</uiIconScale>
+		<fillPercent>0.4</fillPercent>
+		<pathCost>60</pathCost>
+		<staticSunShadowHeight>0.15</staticSunShadowHeight>
+		<castEdgeShadows>True</castEdgeShadows>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>8</Beauty>
+			<WorkToBuild>800</WorkToBuild>
+			<Mass>45</Mass>
+			<BedRestEffectiveness>1</BedRestEffectiveness>
+			<Comfort>0.75</Comfort>
+			<ImmunityGainSpeedFactor>1.07</ImmunityGainSpeedFactor>
+			<SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+		</statBases>
+		<building>
+			<bed_showSleeperBody>False</bed_showSleeperBody>
+			<bed_healPerDay>5</bed_healPerDay>
+			<paintable>true</paintable>
+		</building>
+		<costStuffCount>45</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>Outland_SubCatFurnitureWood</subCategory>
+				<showOnlyInCategory>true</showOnlyInCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	<ThingDef ParentName="OutlandArtableFurnitureBase">
+		<defName>Outland_Bench</defName>
+		<label>bench</label>
+		<description>A wide wooden bench.</description>
+		<graphicData>
+			<texPath>Outland/FurnitureAndDecor/Buildings/WoodFurniture/Bench</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>Cutout</shaderType>
+			<drawSize>(4, 4)</drawSize>
+            <drawOffset>(0.0, 0.0, 0.05)</drawOffset>
+		</graphicData>
+		<size>(2,1)</size>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<fillPercent>0.45</fillPercent>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<pathCost>30</pathCost>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>12000</WorkToBuild>
+			<Mass>8</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>8</Beauty>
+			<Comfort>0.75</Comfort>
+		</statBases>
+		<building>
+			<isSittable>true</isSittable>
+			<paintable>true</paintable>
+		</building>
+		<costStuffCount>85</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>Outland_SubCatFurnitureWood</subCategory>
+				<showOnlyInCategory>true</showOnlyInCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="OutlandFurnitureBase">
+		<defName>Outland_Bookshelf</defName>
+		<label>bookshelf</label>
+		<description>Increases research speed when placed near research table.</description>
+		<graphicData>
+			<texPath>Outland/FurnitureAndDecor/Buildings/WoodFurniture/Bookshelf</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>3</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<size>(1,1)</size>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<uiIconScale>0.65</uiIconScale>
+		<uiIconOffset>(0, 0.30)</uiIconOffset>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.15</staticSunShadowHeight>
+		<fillPercent>1</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<WorkToBuild>7500</WorkToBuild>
+			<Mass>70</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>15</Beauty>
+		</statBases>
+		<building>
+			<paintable>true</paintable>
+		</building>
+		<costStuffCount>80</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<ResearchSpeedFactor>0.075</ResearchSpeedFactor>
+				</statOffsets>
+				<maxDistance>5</maxDistance>
+				<maxSimultaneous>2</maxSimultaneous>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>Outland_SubCatFurnitureWood</subCategory>
+				<showOnlyInCategory>true</showOnlyInCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="OutlandArtableFurnitureBase">
+		<defName>Outland_Chair</defName>
+		<label>chair</label>
+		<description>A comfortable chair. Can be used at tables, work stations, and elsewhere.</description>
+		<graphicData>
+			<texPath>Outland/FurnitureAndDecor/Buildings/WoodFurniture/Chair</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.5,2.5)</drawSize>
+		</graphicData>
+		<uiIconScale>0.6</uiIconScale>
+		<uiIconOffset>(0, 0)</uiIconOffset>
+		<altitudeLayer>Building</altitudeLayer>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<fillPercent>0.35</fillPercent>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<pathCost>30</pathCost>
+		<statBases>
+			<MaxHitPoints>130</MaxHitPoints>
+			<WorkToBuild>5000</WorkToBuild>
+			<Mass>4</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>5</Beauty>
+			<Comfort>0.65</Comfort>
+		</statBases>
+		<building>
+			<isSittable>true</isSittable>
+			<paintable>true</paintable>
+		</building>
+		<costStuffCount>45</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>Outland_SubCatFurnitureWood</subCategory>
+				<showOnlyInCategory>true</showOnlyInCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	<ThingDef ParentName="OutlandArtableFurnitureBase">
+		<defName>Outland_DiningChair</defName>
+		<label>dining chair</label>
+		<description>A comfortable and attractive chair. Can be used at tables, work stations, and elsewhere.</description>
+		<graphicData>
+			<texPath>Outland/FurnitureAndDecor/Buildings/WoodFurniture/DiningChair</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.5,2.5)</drawSize>
+		</graphicData>
+		<uiIconScale>0.6</uiIconScale>
+		<uiIconOffset>(0, 0)</uiIconOffset>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<altitudeLayer>Building</altitudeLayer>
+		<pathCost>30</pathCost>
+		<fillPercent>0.35</fillPercent>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<statBases>
+			<MaxHitPoints>170</MaxHitPoints>
+			<WorkToBuild>7000</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>8</Beauty>
+			<Comfort>0.75</Comfort>
+		</statBases>
+		<building>
+			<isSittable>true</isSittable>
+			<paintable>true</paintable>
+		</building>
+		<costStuffCount>45</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>Outland_SubCatFurnitureWood</subCategory>
+				<showOnlyInCategory>true</showOnlyInCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="OutlandArtableFurnitureBase">
+		<defName>Outland_Dresser</defName>
+		<label>dresser</label>
+		<description>A dresser. Gives a small comfort bonus to all nearby beds. Placing more than one dresser near the same bed has no effect.</description>
+		<graphicData>
+			<texPath>Outland/FurnitureAndDecor/Buildings/WoodFurniture/Dresser</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<size>(2,1)</size>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.4</fillPercent>
+		<castEdgeShadows>true</castEdgeShadows>
+		<pathCost>60</pathCost>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<staticSunShadowHeight>0.1</staticSunShadowHeight>
+		<surfaceType>Item</surfaceType>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>15</Mass>
+			<WorkToBuild>2000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>8</Beauty>
+		</statBases>
+		<building>
+			<paintable>true</paintable>
+		</building>
+		<costStuffCount>50</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<Comfort>0.08</Comfort>
+				</statOffsets>
+				<maxSimultaneous>1</maxSimultaneous>
+				<maxDistance>6</maxDistance>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>Outland_SubCatFurnitureWood</subCategory>
+				<showOnlyInCategory>true</showOnlyInCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="OutlandTableBase">
+		<defName>Outland_EndTable</defName>
+		<label>End table</label>
+		<description>A small bedside table which makes nearby beds a little bit more comfortable. Must be placed directly adjacent to the head of the bed. Placing more than one end table near the same bed has no effect.</description>
+		<graphicData>
+			<texPath>Outland/FurnitureAndDecor/Buildings/WoodFurniture/EndTable</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<uiIconScale>0.6</uiIconScale>
+		<uiIconOffset>(0, 0.0)</uiIconOffset>
+		<surfaceType>Item</surfaceType>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<pathCost>60</pathCost>
+		<staticSunShadowHeight>0.1</staticSunShadowHeight>
+		<castEdgeShadows>false</castEdgeShadows>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>8</Beauty>
+		</statBases>
+		<building>
+			<paintable>true</paintable>
+		</building>
+		<costStuffCount>30</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<Comfort>0.05</Comfort>
+				</statOffsets>
+				<maxSimultaneous>1</maxSimultaneous>
+				<mustBePlacedAdjacentCardinalToBedHead>true</mustBePlacedAdjacentCardinalToBedHead>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>Outland_SubCatFurnitureWood</subCategory>
+				<showOnlyInCategory>true</showOnlyInCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="OutlandTableBase">
+		<defName>Outland_EndTableWithLamp</defName>
+		<label>end table with lamp</label>
+		<description>A small bedside table which makes nearby beds a little bit more comfortable. Must be placed directly adjacent to the head of the bed. Placing more than one end table near the same bed has no effect.</description>
+		<graphicData>
+			<texPath>Outland/FurnitureAndDecor/Buildings/WoodFurniture/EndTableLight</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<uiIconScale>0.6</uiIconScale>
+		<uiIconOffset>(0, 0.15)</uiIconOffset>
+		<surfaceType>Item</surfaceType>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
+		<castEdgeShadows>false</castEdgeShadows>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<pathCost>60</pathCost>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>8</Beauty>
+		</statBases>
+		<costList>
+			<Steel>10</Steel>
+		</costList>
+		<building>
+			<paintable>true</paintable>
+		</building>
+		<costStuffCount>30</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<Comfort>0.05</Comfort>
+				</statOffsets>
+				<maxSimultaneous>1</maxSimultaneous>
+				<mustBePlacedAdjacentCardinalToBedHead>true</mustBePlacedAdjacentCardinalToBedHead>
+			</li>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>2.0</fuelConsumptionRate>
+				<fuelCapacity>25.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>WoodLog</li>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</fuelFilter>
+				<initialFuelPercent>1</initialFuelPercent>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>9</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>2.5</heatPerSecond>
+				<heatPushMaxTemperature>23</heatPushMaxTemperature>
+			</li>
+			<!-- TODO: Fix fire overlay so it sits correctly. -->
+			<!-- <li Class="TabulaRasa.CompProperties_AdvFireOverlay">
+				<fireSize>0.4</fireSize>
+				<offset>(0,0,0.55)</offset>
+			</li> -->
+		</comps>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>Outland_SubCatFurnitureWood</subCategory>
+				<showOnlyInCategory>true</showOnlyInCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	<ThingDef ParentName="OutlandFurnitureBase">
+		<defName>Outland_OilLantern</defName>
+		<label>oil lantern</label>
+		<description>It's a small oil lantern. I think I can use it safely even when it rains.</description>
+		<category>Building</category>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Outland/FurnitureAndDecor/Buildings/WoodFurniture/OilLamp</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawRotated>false</drawRotated>
+			<drawSize>(3, 3)</drawSize>
+		</graphicData>
+		<uiIconScale>0.9</uiIconScale>
+		<rotatable>false</rotatable>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>Standable</passability>
+		<constructEffect>ConstructWood</constructEffect>
+		<tickerType>Normal</tickerType>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<fillPercent>0</fillPercent>
+		<selectable>true</selectable>
+		<soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<destroyable>true</destroyable>
+		<tradeability>None</tradeability>
+		<clearBuildingArea>false</clearBuildingArea>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>100</WorkToBuild>
+			<Flammability>0</Flammability>
+			<Mass>1</Mass>
+			<Beauty>5</Beauty>
+		</statBases>
+		<building>
+			<isEdifice>false</isEdifice>
+		</building>
+		<costList>
+			<WoodLog>5</WoodLog>
+			<Steel>10</Steel>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>2.0</fuelConsumptionRate>
+				<fuelCapacity>10.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>WoodLog</li>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</fuelFilter>
+				<initialFuelPercent>1</initialFuelPercent>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>9</glowRadius>
+				<glowColor>(252, 187, 113, 0)</glowColor>
+			</li>
+			<li Class="TabulaRasa.CompProperties_AdvFireOverlay">
+				<fireSize>0.4</fireSize>
+				<offset>(0, -0.001, 0)</offset>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>Outland_SubCatFurnitureWood</subCategory>
+				<showOnlyInCategory>true</showOnlyInCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="OutlandShelfBase">
+		<defName>Outland_Shelf</defName>
+		<label>shelf</label>
+		<description>A shelf for storing miscellaneous items. Items stored in this will not deteriorate, even if outside.</description>
+		<thingClass>Building_Storage</thingClass>
+		<graphicData>
+			<texPath>Outland/FurnitureAndDecor/Buildings/WoodFurniture/Shelf</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<size>(2,1)</size>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>8</Mass>
+			<WorkToBuild>500</WorkToBuild>
+		</statBases>
+		<building>
+			<paintable>true</paintable>
+		</building>
+		<costStuffCount>45</costStuffCount>
+		<stuffCategories Inherit="False">
+			<li>Woody</li>
+		</stuffCategories>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>Outland_SubCatFurnitureWood</subCategory>
+				<showOnlyInCategory>true</showOnlyInCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="OutlandFurnitureWithQualityBase">
+		<defName>Outland_Stool</defName>
+		<label>stool</label>
+		<description>A simple platform on which to sit. Not very comfortable, but much better than nothing. Can be used at tables, work stations, and elsewhere.</description>
+		<graphicData>
+			<texPath>Outland/FurnitureAndDecor/Buildings/WoodFurniture/Stool</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.5,2.5)</drawSize>
+		</graphicData>
+		<pathCost>30</pathCost>
+		<fillPercent>0.20</fillPercent>
+		<uiIconOffset>(0, -0.05)</uiIconOffset>
+		<rotatable>false</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<WorkToBuild>560</WorkToBuild>
+			<Mass>3</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>5</Beauty>
+			<Comfort>0.6</Comfort>
+		</statBases>
+		<building>
+			<isSittable>true</isSittable>
+			<paintable>true</paintable>
+		</building>
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>Outland_SubCatFurnitureWood</subCategory>
+				<showOnlyInCategory>true</showOnlyInCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="OutlandBuildingBase">
+		<defName>Outland_OilStreetLamp</defName>
+		<label>oil street lamp</label>
+		<description>It's a street lamp.</description>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Outland/FurnitureAndDecor/Buildings/WoodFurniture/StreetLamp</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3.5, 3.5)</drawSize>
+			<drawOffset>(0.0, 0.0, 1.2)</drawOffset>
+		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<uiIconScale>0.3</uiIconScale>
+		<rotatable>false</rotatable>
+		<passability>PassThroughOnly</passability>
+		<pathCost>8</pathCost>
+		<constructEffect>ConstructMetal</constructEffect>
+		<tickerType>Normal</tickerType>
+		<fillPercent>0.2</fillPercent>
+		<soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<selectable>true</selectable>
+		<destroyable>true</destroyable>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<WorkToBuild>250</WorkToBuild>
+			<Flammability>0</Flammability>
+			<Beauty>8</Beauty>
+		</statBases>
+		<costList>
+			<Steel>40</Steel>
+			<Outland_ComponentMedieval>2</Outland_ComponentMedieval>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>2</fuelConsumptionRate>
+				<fuelCapacity>25.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>WoodLog</li>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</fuelFilter>
+				<initialFuelPercent>1</initialFuelPercent>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>15</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<designationCategory>Outland_Outland</designationCategory>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>Outland_SubCatFurnitureWood</subCategory>
+				<showOnlyInCategory>true</showOnlyInCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	<ThingDef ParentName="OutlandTableBase">
+		<defName>Outland_1x1Table</defName>
+		<label>table (1x1)</label>
+		<graphicData>
+			<texPath>Outland/FurnitureAndDecor/Buildings/WoodFurniture/TableSmallSquare</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawRotated>false</drawRotated>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<uiIconScale>0.7</uiIconScale>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToBuild>750</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>5</Beauty>
+		</statBases>
+		<building>
+			<paintable>true</paintable>
+		</building>
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>Outland_SubCatFurnitureWood</subCategory>
+				<showOnlyInCategory>true</showOnlyInCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="OutlandTableBase">
+		<defName>Outland_1x2Table</defName>
+		<label>table (1x2)</label>
+		<graphicData>
+			<texPath>Outland/FurnitureAndDecor/Buildings/WoodFurniture/TableSmallRect</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,4)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<uiIconScale>0.8</uiIconScale>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>5000</WorkToBuild>
+			<Mass>10</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>30</Beauty>
+		</statBases>
+		<building>
+			<paintable>true</paintable>
+		</building>
+		<size>(1,2)</size>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+		<rotatable>true</rotatable>
+		<comps>
+			<li>
+				<compClass>CompGatherSpot</compClass>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>Outland_SubCatFurnitureWood</subCategory>
+				<showOnlyInCategory>true</showOnlyInCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="OutlandTableBase">
+		<defName>Outland_2x2Table</defName>
+		<label>table (2x2)</label>
+		<graphicData>
+			<texPath>Outland/FurnitureAndDecor/Buildings/WoodFurniture/TableMedSquare</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawRotated>false</drawRotated>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<size>(2,2)</size>
+		<rotatable>false</rotatable>
+		<uiIconScale>0.8</uiIconScale>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>1500</WorkToBuild>
+			<Mass>10</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>1</Beauty>
+		</statBases>
+		<building>
+			<paintable>true</paintable>
+		</building>
+		<costStuffCount>50</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<comps>
+			<li>
+				<compClass>CompGatherSpot</compClass>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>Outland_SubCatFurnitureWood</subCategory>
+				<showOnlyInCategory>true</showOnlyInCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	<ThingDef ParentName="OutlandTableBase">
+		<defName>Outland_2x4Table</defName>
+		<label>table (2x4)</label>
+		<graphicData>
+			<texPath>Outland/FurnitureAndDecor/Buildings/WoodFurniture/TableMedRect</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(6,6)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<uiIconScale>0.8</uiIconScale>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<WorkToBuild>8000</WorkToBuild>
+			<Mass>20</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>2</Beauty>
+		</statBases>
+		<building>
+			<paintable>true</paintable>
+		</building>
+		<size>(2,4)</size>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>180</costStuffCount>
+		<rotatable>true</rotatable>
+		<comps>
+			<li>
+				<compClass>CompGatherSpot</compClass>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>Outland_SubCatFurnitureWood</subCategory>
+				<showOnlyInCategory>true</showOnlyInCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	<ThingDef ParentName="OutlandTableBase">
+		<defName>Outland_3x3Table</defName>
+		<label>table (3x3)</label>
+		<graphicData>
+			<texPath>Outland/FurnitureAndDecor/Buildings/WoodFurniture/TableLargeSquare</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawRotated>false</drawRotated>
+			<drawSize>(5,5)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<uiIconScale>0.8</uiIconScale>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<WorkToBuild>8000</WorkToBuild>
+			<Mass>10</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>75</Beauty>
+		</statBases>
+		<building>
+			<paintable>true</paintable>
+		</building>
+		<size>(3,3)</size>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>240</costStuffCount>
+		<rotatable>false</rotatable>
+		<comps>
+			<li>
+				<compClass>CompGatherSpot</compClass>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>Outland_SubCatFurnitureWood</subCategory>
+				<showOnlyInCategory>true</showOnlyInCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="OutlandTableBase">
+		<defName>Outland_3x3TableHearth</defName>
+		<label>table (hearth)</label>
+		<graphicData>
+			<texPath>Outland/FurnitureAndDecor/Buildings/WoodFurniture/TableLargeSquare_Hearth</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawRotated>false</drawRotated>
+			<drawSize>(5,5)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<uiIconScale>0.8</uiIconScale>
+		<tickerType>Normal</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<WorkToBuild>8000</WorkToBuild>
+			<Mass>10</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>75</Beauty>
+		</statBases>
+		<building>
+			<paintable>true</paintable>
+		</building>
+		<size>(3,3)</size>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>240</costStuffCount>
+		<rotatable>false</rotatable>
+		<comps>
+			<li>
+				<compClass>CompGatherSpot</compClass>
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>10.0</fuelConsumptionRate>
+				<fuelCapacity>20.0</fuelCapacity>
+				<fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
+				<fuelFilter>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>
+				</fuelFilter>
+				<initialFuelPercent>1</initialFuelPercent>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>10</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>21</heatPerSecond>
+				<heatPushMaxTemperature>28</heatPushMaxTemperature>
+			</li>
+			<li Class="CompProperties_FireOverlay">
+				<fireSize>1</fireSize>
+				<offset>(0,0,0.2)</offset>
+			</li>
+			<li Class="CompProperties_MeditationFocus">
+				<statDef>MeditationFocusStrength</statDef>
+				<focusTypes>
+					<li>Flame</li>
+				</focusTypes>
+				<offsets>
+					<li Class="FocusStrengthOffset_Lit">
+						<offset>0.12</offset>
+					</li>
+					<li Class="FocusStrengthOffset_BuildingDefsLit">
+						<defs>
+							<li>Campfire</li>
+							<li>TorchLamp</li>
+							<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+							<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+							<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
+							<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
+						</defs>
+						<offsetPerBuilding>0.02</offsetPerBuilding>
+						<radius>9.9</radius>
+						<maxBuildings>8</maxBuildings>
+						<explanationKey>MeditationFocusPerFlame</explanationKey>
+						<explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
+					</li>
+				</offsets>
+			</li>
+			<li Class="TabulaRasa.CompProperties_ExtraGraphics">
+				<extraGraphics>
+					<li>
+						<label>Default</label>
+						<path>Outland/FurnitureAndDecor/Buildings/WoodFurniture/TableLargeSquare_Hearth</path>
+					</li>
+					<li>
+						<label>Red Cloth</label>
+						<path>Outland/FurnitureAndDecor/Buildings/WoodFurniture/TableLargeSquare_HearthRed</path>
+					</li>
+					<li>
+						<label>Blue Cloth</label>
+						<path>Outland/FurnitureAndDecor/Buildings/WoodFurniture/TableLargeSquare_HearthBlue</path>
+					</li>
+					<li>
+						<label>Green Cloth</label>
+						<path>Outland/FurnitureAndDecor/Buildings/WoodFurniture/TableLargeSquare_HearthGreen</path>
+					</li>
+					<li>
+						<label>Purple Cloth</label>
+						<path>Outland/FurnitureAndDecor/Buildings/WoodFurniture/TableLargeSquare_HearthPurple</path>
+					</li>
+				</extraGraphics>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>Outland_SubCatFurnitureWood</subCategory>
+				<showOnlyInCategory>true</showOnlyInCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>Outland_OilWallLanterns</defName>
+		<label>wall lanterns</label>
+	</DesignatorDropdownGroupDef>
+
+	<ThingDef Name="OutlandOilWallLanternBase" ParentName="OutlandWallLightBase" Abstract="True">
+		<description>A wall mounted lighting fixture.</description>
+		<techLevel>Medieval</techLevel>
+		<graphicData>
+			<texPath>Outland/FurnitureAndDecor/Buildings/WoodFurniture/WallOilLamp</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.5,2.5)</drawSize>
+		</graphicData>
+		<uiIconScale>1</uiIconScale>
+		<uiIconOffset>(0,-0.2)</uiIconOffset>
+		<statBases>
+			<MaxHitPoints>10</MaxHitPoints>
+			<WorkToBuild>100</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Mass>2</Mass>
+		</statBases>
+		<costList>
+			<WoodLog>5</WoodLog>
+			<Outland_ComponentMedieval>2</Outland_ComponentMedieval>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>2.0</fuelConsumptionRate>
+				<fuelCapacity>10.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>WoodLog</li>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</fuelFilter>
+				<initialFuelPercent>1</initialFuelPercent>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<designatorDropdown>Outland_OilWallLanterns</designatorDropdown>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>Outland_SubCatFurnitureWood</subCategory>
+				<showOnlyInCategory>true</showOnlyInCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	<ThingDef ParentName="OutlandOilWallLanternBase">
+		<defName>Outland_WallLantern</defName>
+		<label>wall lantern</label>
+		<comps>
+			<li Class="VanillaFurnitureExpanded.CompProperties_GlowerExtended">
+				<spawnGlowerInFacedCell>true</spawnGlowerInFacedCell>
+				<colorOptions>
+					<li>
+						<glowRadius>7</glowRadius>
+						<glowColor>(252, 187, 113)</glowColor>
+						<colorLabel>normal</colorLabel>
+					</li>
+				</colorOptions>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="OutlandOilWallLanternBase" MayRequire="Ludeon.RimWorld.Ideology">
+		<defName>Outland_WallLantern_Darklight</defName>
+		<label>wall lantern (darklight)</label>
+		<comps>
+			<li Class="VanillaFurnitureExpanded.CompProperties_GlowerExtended">
+				<spawnGlowerInFacedCell>true</spawnGlowerInFacedCell>
+				<colorOptions>
+					<li>
+						<glowRadius>7</glowRadius>
+						<glowColor>(78, 226, 229)</glowColor>
+						<colorLabel>darklight</colorLabel>
+					</li>
+				</colorOptions>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>Outland_WallSconce</defName>
+		<label>wall sconces</label>
+	</DesignatorDropdownGroupDef>
+
+	<ThingDef ParentName="OutlandWallLightBase" Name="OutlandWallSconceBase" Abstract="True">
+		<description>A wall mounted lighting fixture. Embedded into the wall slightly.</description>
+		<graphicData>
+			<texPath>Outland/FurnitureAndDecor/Buildings/WoodFurniture/WallLampFlush</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1, 1)</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>10</MaxHitPoints>
+			<WorkToBuild>100</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Mass>2</Mass>
+		</statBases>
+		<costStuffCount>5</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>2.0</fuelConsumptionRate>
+				<fuelCapacity>10.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>WoodLog</li>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</fuelFilter>
+				<initialFuelPercent>1</initialFuelPercent>
+			</li>
+		</comps>
+		<designatorDropdown>Outland_WallSconce</designatorDropdown>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>Outland_SubCatFurnitureWood</subCategory>
+				<showOnlyInCategory>true</showOnlyInCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	<ThingDef ParentName="OutlandWallSconceBase">
+		<defName>Outland_WallSconce</defName>
+		<label>wall sconce</label>
+		<comps>
+			<li Class="VanillaFurnitureExpanded.CompProperties_GlowerExtended">
+				<spawnGlowerInFacedCell>true</spawnGlowerInFacedCell>
+				<colorOptions>
+					<li>
+						<glowRadius>7</glowRadius>
+						<glowColor>(252, 187, 113)</glowColor>
+						<colorLabel>normal</colorLabel>
+					</li>
+				</colorOptions>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="OutlandWallSconceBase" MayRequire="Ludeon.RimWorld.Ideology">
+		<defName>Outland_WallSconce_Darklight</defName>
+		<label>wall sconce (darklight)</label>
+		<comps>
+			<li Class="VanillaFurnitureExpanded.CompProperties_GlowerExtended">
+				<spawnGlowerInFacedCell>true</spawnGlowerInFacedCell>
+				<colorOptions>
+					<li>
+						<glowRadius>7</glowRadius>
+						<glowColor>(78, 226, 229)</glowColor>
+						<colorLabel>darklight</colorLabel>
+					</li>
+				</colorOptions>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="OutlandFurnitureWithQualityBase">
+		<defName>Outland_Wardrobe</defName>
+		<label>wardrobe</label>
+		<description>Shelves and drawers for storing clothes.</description>
+		<graphicData>
+			<texPath>Outland/FurnitureAndDecor/Buildings/WoodFurniture/Wardrobe</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<uiIconScale>0.65</uiIconScale>
+		<uiIconOffset>(0, 0.30)</uiIconOffset>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>1</fillPercent>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.15</staticSunShadowHeight>
+		<surfaceType>Item</surfaceType>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<Beauty>8</Beauty>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>8</Mass>
+			<WorkToBuild>3000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<building>
+			<paintable>true</paintable>
+		</building>
+		<costStuffCount>120</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<Comfort>0.02</Comfort>
+				</statOffsets>
+				<maxSimultaneous>1</maxSimultaneous>
+				<maxDistance>5</maxDistance>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>Outland_SubCatFurnitureWood</subCategory>
+				<showOnlyInCategory>true</showOnlyInCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	<ThingDef ParentName="OutlandFurnitureWithQualityBase">
+		<defName>Outland_WineRack</defName>
+		<label>wine rack</label>
+		<description>A shelf for storing wine or alcohol.</description>
+		<graphicData>
+			<texPath>Outland/FurnitureAndDecor/Buildings/WoodFurniture/WineRack</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<size>(1,1)</size>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<uiIconScale>0.65</uiIconScale>
+		<uiIconOffset>(0, 0.30)</uiIconOffset>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>1</fillPercent>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.15</staticSunShadowHeight>
+		<surfaceType>Item</surfaceType>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<Beauty>12</Beauty>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>8</Mass>
+			<WorkToBuild>3000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<building>
+			<paintable>true</paintable>
+		</building>
+		<costStuffCount>50</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>Outland_SubCatFurnitureWood</subCategory>
+				<showOnlyInCategory>true</showOnlyInCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+</Defs>

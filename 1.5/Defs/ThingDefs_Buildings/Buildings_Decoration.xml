@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef ParentName="OutlandFurnitureWithQualityBase">
+		<defName>Outland_Barrel</defName>
+		<label>barrel</label>
+		<description>Just a barrel. What else did you expect it to say here?</description>
+		<graphicData>
+			<texPath>Outland/FurnitureAndDecor/Buildings/Furniture/Barrel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<pathCost>30</pathCost>
+		<fillPercent>0.20</fillPercent>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<WorkToBuild>560</WorkToBuild>
+			<Mass>3</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>5</Beauty>
+			<Comfort>0.6</Comfort>
+		</statBases>
+		<building>
+			<isSittable>true</isSittable>
+			<paintable>true</paintable>
+		</building>
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<designationCategory>Outland_Outland</designationCategory>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>Outland_SubCatDecoration</subCategory>
+				<showOnlyInCategory>true</showOnlyInCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="OutlandFurnitureWithQualityBase">
+		<defName>Outland_Gravestone</defName>
+		<label>gravestone</label>
+		<description>All it needs is a ghost pointing at it menacingly to change an immoral capitalists behaviour.</description>
+		<graphicData>
+			<texPath>Outland/FurnitureAndDecor/Buildings/Gravestone_A</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Cutout</shaderType>
+			<drawSize>(3, 3)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<pathCost>30</pathCost>
+		<fillPercent>0.20</fillPercent>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<WorkToBuild>560</WorkToBuild>
+			<Mass>3</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>5</Beauty>
+			<Comfort>0.6</Comfort>
+		</statBases>
+		<building>
+			<isSittable>false</isSittable>
+			<paintable>true</paintable>
+		</building>
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<designationCategory>Outland_Outland</designationCategory>
+		<comps>
+			<li Class="TabulaRasa.CompProperties_ExtraGraphics">
+				<extraGraphics>
+					<li>
+						<label>Beveled</label>
+						<path>Outland/FurnitureAndDecor/Buildings/Gravestone_A</path>
+					</li>
+					<li>
+						<label>Ridged</label>
+						<path>Outland/FurnitureAndDecor/Buildings/Gravestone_B</path>
+					</li>
+					<li>
+						<label>Small</label>
+						<path>Outland/FurnitureAndDecor/Buildings/Gravestone_C</path>
+					</li>
+				</extraGraphics>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>Outland_SubCatDecoration</subCategory>
+				<showOnlyInCategory>true</showOnlyInCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef Name="OutlandBorderBase" ParentName="OutlandBuildingBase" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<rotatable>true</rotatable>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>Standable</passability>
+		<fillPercent>0.01</fillPercent>
+		<selectable>true</selectable>
+		<soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<destroyable>true</destroyable>
+		<tradeability>None</tradeability>
+		<clearBuildingArea>false</clearBuildingArea>
+		<resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+		<!-- <placingDraggableDimensions>1</placingDraggableDimensions> -->
+		<statBases>
+			<MaxHitPoints>45</MaxHitPoints>
+			<WorkToBuild>100</WorkToBuild>
+			<Flammability>0</Flammability>
+			<Mass>1</Mass>
+			<Beauty>1</Beauty>
+		</statBases>
+		<building>
+			<isEdifice>false</isEdifice>
+			<paintable>true</paintable>
+		</building>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<costStuffCount>1</costStuffCount>
+		<designationCategory>Outland_Outland</designationCategory>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>Outland_SubCatDecoration</subCategory>
+				<showOnlyInCategory>true</showOnlyInCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="OutlandBorderBase">
+		<defName>Outland_BorderWood</defName>
+		<label>wooden border</label>
+		<description>Simple wooden floor border. Purely decorative.</description>
+		<graphicData>
+			<texPath>Outland/FurnitureAndDecor/Buildings/Furniture/BoundaryWood</texPath>
+		</graphicData>
+		<uiIconOffset>(0, -0.35)</uiIconOffset>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="OutlandBorderBase">
+		<defName>Outland_BorderWoodCorner</defName>
+		<label>wooden border (corner)</label>
+		<description>Simple wooden floor border. Purely decorative.</description>
+		<graphicData>
+			<texPath>Outland/FurnitureAndDecor/Buildings/Furniture/BoundaryWoodCorner</texPath>
+		</graphicData>
+		<uiIconOffset>(0.3, -0.35)</uiIconOffset>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="OutlandBorderBase">
+		<defName>Outland_BorderStone</defName>
+		<label>stone border</label>
+		<description>Simple stone floor border. Purely decorative.</description>
+		<graphicData>
+			<texPath>Outland/FurnitureAndDecor/Buildings/Furniture/BoundaryStone</texPath>
+		</graphicData>
+		<uiIconOffset>(0, -0.35)</uiIconOffset>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="OutlandBorderBase">
+		<defName>Outland_BorderStoneCorner</defName>
+		<label>stone border (corner)</label>
+		<description>Simple stone floor border. Purely decorative.</description>
+		<graphicData>
+			<texPath>Outland/FurnitureAndDecor/Buildings/Furniture/BoundaryStoneCorner</texPath>
+		</graphicData>
+		<uiIconOffset>(0.3, -0.35)</uiIconOffset>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+	</ThingDef>
+	
+	<ThingDef ParentName="OutlandFurnitureWithQualityBase">
+		<defName>Outland_Bucket</defName>
+		<label>bucket</label>
+		<description>Seriously? You need a description for this one?</description>
+		<graphicData>
+			<texPath>Outland/FurnitureAndDecor/Buildings/Furniture/Bucket</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<pathCost>30</pathCost>
+		<fillPercent>0.20</fillPercent>
+		<uiIconOffset>(0, -0.05)</uiIconOffset>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<WorkToBuild>560</WorkToBuild>
+			<Mass>3</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>1</Beauty>
+		</statBases>
+		<building>
+			<paintable>true</paintable>
+		</building>
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<designationCategory>Outland_Outland</designationCategory>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>Outland_SubCatDecoration</subCategory>
+				<showOnlyInCategory>true</showOnlyInCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="OutlandFurnitureWithQualityBase">
+		<defName>Outland_Pot</defName>
+		<label>pot</label>
+		<description>A storage container made from clay.</description>
+		<techLevel>Neolithic</techLevel>
+		<graphicData>
+			<texPath>Outland/FurnitureAndDecor/Buildings/Furniture/PotA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<color>(171, 119, 91)</color>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<tickerType>Normal</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
+		<pathCost>30</pathCost>
+		<fillPercent>0.20</fillPercent>
+		<uiIconOffset>(0, -0.05)</uiIconOffset>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<WorkToBuild>560</WorkToBuild>
+			<Mass>3</Mass>
+			<Flammability>0</Flammability>
+			<Beauty>2</Beauty>
+		</statBases>
+		<building>
+			<paintable>true</paintable>
+		</building>
+		<costList>
+			<Outland_ClayBrick>10</Outland_ClayBrick>
+		</costList>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<designationCategory>Outland_Outland</designationCategory>
+		<comps>
+			<li Class="TabulaRasa.CompProperties_ExtraGraphics">
+				<extraGraphics>
+					<li>
+						<label>Pot (Normal)</label>
+						<path>Outland/FurnitureAndDecor/Buildings/Furniture/PotA</path>
+					</li>
+					<li>
+						<label>Pot (Tall)</label>
+						<path>Outland/FurnitureAndDecor/Buildings/Furniture/PotB</path>
+					</li>
+					<li>
+						<label>Pot (Wide)</label>
+						<path>Outland/FurnitureAndDecor/Buildings/Furniture/PotC</path>
+					</li>
+				</extraGraphics>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>Outland_SubCatDecoration</subCategory>
+				<showOnlyInCategory>true</showOnlyInCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="OutlandRugBase">
+		<defName>Outland_Rug2x2Round</defName>
+		<label>2x2 round rug</label>
+		<graphicData>
+			<texPath>Outland/FurnitureAndDecor/Buildings/Rugs/2x2RoundRug</texPath>
+			<shaderType>Cutout</shaderType>
+			<drawSize>(4, 4)</drawSize>
+			<color>(166, 83, 83)</color>
+		</graphicData>
+		<size>(2, 2)</size>
+		<building>
+			<paintable>true</paintable>
+		</building>
+		<ignoreIllegalLabelCharacterConfigError>true</ignoreIllegalLabelCharacterConfigError>
+	</ThingDef>
+
+	<ThingDef ParentName="OutlandRugBase">
+		<defName>Outland_Rug3x3Round</defName>
+		<label>3x3 round rug</label>
+		<graphicData>
+			<texPath>Outland/FurnitureAndDecor/Buildings/Rugs/3x3RoundRug</texPath>
+			<shaderType>Cutout</shaderType>
+			<drawSize>(4, 4)</drawSize>
+			<color>(166, 83, 83)</color>
+		</graphicData>
+		<size>(3, 3)</size>
+		<building>
+			<paintable>true</paintable>
+		</building>
+		<ignoreIllegalLabelCharacterConfigError>true</ignoreIllegalLabelCharacterConfigError>
+	</ThingDef>
+
+	<ThingDef ParentName="OutlandRugBase">
+		<defName>Outland_Rug2x3Square</defName>
+		<label>2x3 square rug</label>
+		<graphicData>
+			<texPath>Outland/FurnitureAndDecor/Buildings/Rugs/2x3SquareRug</texPath>
+			<shaderType>Cutout</shaderType>
+			<drawSize>(4, 4)</drawSize>
+			<color>(166, 83, 83)</color>
+		</graphicData>
+		<size>(2, 3)</size>
+		<building>
+			<paintable>true</paintable>
+		</building>
+		<ignoreIllegalLabelCharacterConfigError>true</ignoreIllegalLabelCharacterConfigError>
+	</ThingDef>
+
+	<ThingDef ParentName="OutlandRugBase">
+		<defName>Outland_Rug3x3Square</defName>
+		<label>3x3 square rug</label>
+		<graphicData>
+			<texPath>Outland/FurnitureAndDecor/Buildings/Rugs/3x3SquareRug</texPath>
+			<shaderType>Cutout</shaderType>
+			<drawSize>(4, 4)</drawSize>
+			<color>(166, 83, 83)</color>
+		</graphicData>
+		<size>(3, 3)</size>
+		<building>
+			<paintable>true</paintable>
+		</building>
+	</ThingDef>
+
+</Defs>
