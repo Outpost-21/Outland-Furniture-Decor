@@ -2,7 +2,7 @@
 <ModMetaData>
 	<name>Outland - Furniture &amp; Decor</name>
 	<packageId>Neronix17.Outland.FurnitureAndDecor</packageId>
-	<modIconPath>Outland/ModIcon</modIconPath>
+	<modIconPath IgnoreIfNoMatchingField="True">Outland/ModIcon</modIconPath>
 	<description>Standalone module for Outland, adding sets of furniture and decor.</description>
 	<author>Neronix17</author>
 	<url>https://www.patreon.com/neronix17</url>
