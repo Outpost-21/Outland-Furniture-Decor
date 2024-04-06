@@ -64,7 +64,7 @@
 		</graphicData>
 		<comps>
 			<li Class="CompProperties_Glower">
-				<glowRadius>7</glowRadius>
+				<glowRadius>9</glowRadius>
 				<glowColor>(101, 173, 224)</glowColor>
 			</li>
 		</comps>
@@ -79,7 +79,7 @@
 		</graphicData>
 		<comps>
 			<li Class="CompProperties_Glower">
-				<glowRadius>7</glowRadius>
+				<glowRadius>9</glowRadius>
 				<glowColor>(78, 226, 229)</glowColor>
 			</li>
 		</comps>
@@ -97,8 +97,15 @@
 			<texPath>Outland/Buildings/Furniture/Kalocite/CrystalWallLamp</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-			<drawSize>(2.5, 2.5)</drawSize>
+			<drawOffsetNorth>(0,0,0.9)</drawOffsetNorth>
+			<drawOffsetSouth>(0,0,-0.9)</drawOffsetSouth>
+			<drawOffsetWest>(-0.9,0,0)</drawOffsetWest>
+			<drawOffsetEast>(0.9,0,0)</drawOffsetEast>
+			<damageData>
+			  <enabled>false</enabled>
+			</damageData>
 		</graphicData>
+		<uiIconPath>Outland/Buildings/Furniture/Kalocite/CrystalWallLamp</uiIconPath>
 		<statBases>
 			<MaxHitPoints>10</MaxHitPoints>
 			<WorkToBuild>100</WorkToBuild>
@@ -132,15 +139,9 @@
 			<color>(101, 173, 224)</color>
 		</graphicData>
 		<comps>
-			<li Class="VanillaFurnitureExpanded.CompProperties_GlowerExtended">
-				<spawnGlowerInFacedCell>true</spawnGlowerInFacedCell>
-				<colorOptions>
-					<li>
-						<glowRadius>7</glowRadius>
-						<glowColor>(101, 173, 224)</glowColor>
-						<colorLabel>kalocite</colorLabel>
-					</li>
-				</colorOptions>
+			<li Class="CompProperties_Glower">
+				<glowRadius>9</glowRadius>
+				<glowColor>(101, 173, 224)</glowColor>
 			</li>
 		</comps>
 	</ThingDef>
@@ -153,15 +154,9 @@
 			<color>(78, 226, 229)</color>
 		</graphicData>
 		<comps>
-			<li Class="VanillaFurnitureExpanded.CompProperties_GlowerExtended">
-				<spawnGlowerInFacedCell>true</spawnGlowerInFacedCell>
-				<colorOptions>
-					<li>
-						<glowRadius>7</glowRadius>
-						<glowColor>(78, 226, 229)</glowColor>
-						<colorLabel>darklight</colorLabel>
-					</li>
-				</colorOptions>
+			<li Class="CompProperties_Glower">
+				<glowRadius>9</glowRadius>
+				<glowColor>(78, 226, 229)</glowColor>
 			</li>
 		</comps>
 	</ThingDef>

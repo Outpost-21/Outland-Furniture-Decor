@@ -1058,12 +1058,17 @@
 		<description>A wall mounted lighting fixture.</description>
 		<techLevel>Medieval</techLevel>
 		<graphicData>
-			<texPath>Outland/FurnitureAndDecor/Buildings/WoodFurniture/WallOilLamp</texPath>
+			<texPath>Outland/Buildings/Furniture/Wood/WallOilLamp</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(2.5,2.5)</drawSize>
+			<drawOffsetNorth>(0,0,0.9)</drawOffsetNorth>
+			<drawOffsetSouth>(0,0,-0.9)</drawOffsetSouth>
+			<drawOffsetWest>(-0.9,0,0)</drawOffsetWest>
+			<drawOffsetEast>(0.9,0,0)</drawOffsetEast>
+			<damageData>
+			  <enabled>false</enabled>
+			</damageData>
 		</graphicData>
-		<uiIconScale>1</uiIconScale>
-		<uiIconOffset>(0,-0.2)</uiIconOffset>
+		<uiIconPath>Outland/Buildings/Furniture/Wood/WallOilLamp_north</uiIconPath>
 		<statBases>
 			<MaxHitPoints>10</MaxHitPoints>
 			<WorkToBuild>100</WorkToBuild>
@@ -1141,11 +1146,18 @@
 	<ThingDef ParentName="OutlandWallLightBase" Name="OutlandWallSconceBase" Abstract="True">
 		<description>A wall mounted lighting fixture. Embedded into the wall slightly.</description>
 		<graphicData>
-			<texPath>Outland/FurnitureAndDecor/Buildings/WoodFurniture/WallLampFlush</texPath>
+			<texPath>Outland/Buildings/Furniture/Wood/WallLampFlush</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-			<drawSize>(1, 1)</drawSize>
+			<drawOffsetNorth>(0,0,0.9)</drawOffsetNorth>
+			<drawOffsetSouth>(0,0,-0.9)</drawOffsetSouth>
+			<drawOffsetWest>(-0.9,0,0)</drawOffsetWest>
+			<drawOffsetEast>(0.9,0,0)</drawOffsetEast>
+			<damageData>
+			  <enabled>false</enabled>
+			</damageData>
 		</graphicData>
+		<uiIconPath>Outland/Buildings/Furniture/Wood/WallLampFlush_north</uiIconPath>
 		<statBases>
 			<MaxHitPoints>10</MaxHitPoints>
 			<WorkToBuild>100</WorkToBuild>
@@ -1163,7 +1175,8 @@
 			<li Class="CompProperties_Flickable" />
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>2.0</fuelConsumptionRate>
-				<fuelCapacity>10.0</fuelCapacity>
+				<fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
+				<fuelCapacity>20.0</fuelCapacity>
 				<fuelFilter>
 					<thingDefs>
 						<li>WoodLog</li>
@@ -1171,9 +1184,25 @@
 					</thingDefs>
 				</fuelFilter>
 				<initialFuelPercent>1</initialFuelPercent>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>3.5</heatPerSecond>
+				<heatPushMaxTemperature>23</heatPushMaxTemperature>
+			</li>
+			<li Class="CompProperties_MeditationFocus">
+				<statDef>MeditationFocusStrength</statDef>
+				<focusTypes>
+					<li>Flame</li>
+				</focusTypes>
+				<offsets>
+					<li Class="FocusStrengthOffset_Lit">
+						<offset>0.1</offset>
+					</li>
+				</offsets>
 			</li>
 		</comps>
-		<designatorDropdown>Outland_WallSconce</designatorDropdown>
 		<modExtensions>
 			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
 				<subCategory>Outland_SubCatFurnitureWood</subCategory>
@@ -1186,15 +1215,9 @@
 		<defName>Outland_WallSconce</defName>
 		<label>wall sconce</label>
 		<comps>
-			<li Class="VanillaFurnitureExpanded.CompProperties_GlowerExtended">
-				<spawnGlowerInFacedCell>true</spawnGlowerInFacedCell>
-				<colorOptions>
-					<li>
-						<glowRadius>7</glowRadius>
-						<glowColor>(252, 187, 113)</glowColor>
-						<colorLabel>normal</colorLabel>
-					</li>
-				</colorOptions>
+			<li Class="CompProperties_Glower">
+				<glowRadius>9</glowRadius>
+				<glowColor>(184, 136, 83, 0)</glowColor>
 			</li>
 		</comps>
 	</ThingDef>
@@ -1203,15 +1226,9 @@
 		<defName>Outland_WallSconce_Darklight</defName>
 		<label>wall sconce (darklight)</label>
 		<comps>
-			<li Class="VanillaFurnitureExpanded.CompProperties_GlowerExtended">
-				<spawnGlowerInFacedCell>true</spawnGlowerInFacedCell>
-				<colorOptions>
-					<li>
-						<glowRadius>7</glowRadius>
-						<glowColor>(78, 226, 229)</glowColor>
-						<colorLabel>darklight</colorLabel>
-					</li>
-				</colorOptions>
+			<li Class="CompProperties_Glower">
+				<glowRadius>9</glowRadius>
+				<glowColor>(78, 226, 229, 0)</glowColor>
 			</li>
 		</comps>
 	</ThingDef>

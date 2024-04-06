@@ -259,7 +259,7 @@
 	</ThingDef>
 
 	<!-- Stone Oil Lantern -->
-	
+
 	<ThingDef ParentName="OutlandFurnitureBase">
 		<defName>Outland_StoneOilLantern</defName>
 		<label>oil lantern</label>
@@ -331,7 +331,7 @@
 	</ThingDef>
 
 	<!-- Stone Shelf -->
-	
+
 	<ThingDef ParentName="OutlandShelfBase">
 		<defName>Outland_StoneShelf</defName>
 		<label>shelf</label>
@@ -658,7 +658,7 @@
 	</ThingDef>
 
 	<!-- Stone Table 3x3 -->
-	
+
 	<ThingDef ParentName="OutlandTableBase">
 		<defName>Outland_Stone3x3Table</defName>
 		<label>table (3x3)</label>
@@ -847,11 +847,18 @@
 	<ThingDef ParentName="OutlandWallLightBase" Name="OutlandStoneWallSconceBase" Abstract="True">
 		<description>A wall mounted lighting fixture. Embedded into the wall slightly.</description>
 		<graphicData>
-			<texPath>Outland/FurnitureAndDecor/Buildings/StoneFurniture/WallLampFlush</texPath>
+			<texPath>Outland/Buildings/Furniture/Stone/WallLampFlush</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-			<drawSize>(1, 1)</drawSize>
+			<drawOffsetNorth>(0,0,0.9)</drawOffsetNorth>
+			<drawOffsetSouth>(0,0,-0.9)</drawOffsetSouth>
+			<drawOffsetWest>(-0.9,0,0)</drawOffsetWest>
+			<drawOffsetEast>(0.9,0,0)</drawOffsetEast>
+			<damageData>
+			  <enabled>false</enabled>
+			</damageData>
 		</graphicData>
+		<uiIconPath>Outland/Buildings/Furniture/Stone/WallLampFlush_north</uiIconPath>
 		<statBases>
 			<MaxHitPoints>10</MaxHitPoints>
 			<WorkToBuild>100</WorkToBuild>
@@ -869,7 +876,8 @@
 			<li Class="CompProperties_Flickable" />
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>2.0</fuelConsumptionRate>
-				<fuelCapacity>10.0</fuelCapacity>
+				<fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
+				<fuelCapacity>20.0</fuelCapacity>
 				<fuelFilter>
 					<thingDefs>
 						<li>WoodLog</li>
@@ -877,9 +885,25 @@
 					</thingDefs>
 				</fuelFilter>
 				<initialFuelPercent>1</initialFuelPercent>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>3.5</heatPerSecond>
+				<heatPushMaxTemperature>23</heatPushMaxTemperature>
+			</li>
+			<li Class="CompProperties_MeditationFocus">
+				<statDef>MeditationFocusStrength</statDef>
+				<focusTypes>
+					<li>Flame</li>
+				</focusTypes>
+				<offsets>
+					<li Class="FocusStrengthOffset_Lit">
+						<offset>0.1</offset>
+					</li>
+				</offsets>
 			</li>
 		</comps>
-		<designatorDropdown>Outland_StoneWallSconce</designatorDropdown>
 		<modExtensions>
 			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
 				<subCategory>Outland_SubCatFurnitureStone</subCategory>
@@ -887,37 +911,25 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="OutlandStoneWallSconceBase">
 		<defName>Outland_StoneWallSconce</defName>
 		<label>wall sconce</label>
 		<comps>
-			<li Class="VanillaFurnitureExpanded.CompProperties_GlowerExtended">
-				<spawnGlowerInFacedCell>true</spawnGlowerInFacedCell>
-				<colorOptions>
-					<li>
-						<glowRadius>7</glowRadius>
-						<glowColor>(252, 187, 113)</glowColor>
-						<colorLabel>normal</colorLabel>
-					</li>
-				</colorOptions>
+			<li Class="CompProperties_Glower">
+				<glowRadius>9</glowRadius>
+				<glowColor>(184, 136, 83, 0)</glowColor>
 			</li>
 		</comps>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="OutlandStoneWallSconceBase" MayRequire="Ludeon.RimWorld.Ideology">
 		<defName>Outland_StoneWallSconce_Darklight</defName>
 		<label>wall sconce (darklight)</label>
 		<comps>
-			<li Class="VanillaFurnitureExpanded.CompProperties_GlowerExtended">
-				<spawnGlowerInFacedCell>true</spawnGlowerInFacedCell>
-				<colorOptions>
-					<li>
-						<glowRadius>7</glowRadius>
-						<glowColor>(78, 226, 229)</glowColor>
-						<colorLabel>darklight</colorLabel>
-					</li>
-				</colorOptions>
+			<li Class="CompProperties_Glower">
+				<glowRadius>9</glowRadius>
+				<glowColor>(78, 226, 229, 0)</glowColor>
 			</li>
 		</comps>
 	</ThingDef>
