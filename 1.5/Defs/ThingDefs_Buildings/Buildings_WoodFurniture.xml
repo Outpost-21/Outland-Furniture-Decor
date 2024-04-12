@@ -442,6 +442,7 @@
 		</researchPrerequisites>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
+			<li>PlaceWorker_GlowRadius</li>
 		</placeWorkers>
 		<comps>
 			<li Class="CompProperties_Facility">
@@ -527,6 +528,9 @@
 			<WoodLog>5</WoodLog>
 			<Steel>10</Steel>
 		</costList>
+		<placeWorkers>
+			<li>PlaceWorker_GlowRadius</li>
+		</placeWorkers>
 		<comps>
 			<li Class="CompProperties_Flickable" />
 			<li Class="CompProperties_Refuelable">
@@ -664,6 +668,9 @@
 			<Flammability>0</Flammability>
 			<Beauty>8</Beauty>
 		</statBases>
+		<placeWorkers>
+			<li>PlaceWorker_GlowRadius</li>
+		</placeWorkers>
 		<costList>
 			<Steel>40</Steel>
 			<WoodLog>2</WoodLog>

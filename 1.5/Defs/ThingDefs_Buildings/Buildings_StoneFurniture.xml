@@ -219,6 +219,7 @@
 		</researchPrerequisites>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
+			<li>PlaceWorker_GlowRadius</li>
 		</placeWorkers>
 		<comps>
 			<li Class="CompProperties_Facility">
@@ -294,6 +295,9 @@
 			<Mass>1</Mass>
 			<Beauty>5</Beauty>
 		</statBases>
+		<placeWorkers>
+			<li>PlaceWorker_GlowRadius</li>
+		</placeWorkers>
 		<building>
 			<isEdifice>false</isEdifice>
 		</building>
@@ -462,6 +466,9 @@
 				<glowColor>(252,187,113,0)</glowColor>
 			</li>
 		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_GlowRadius</li>
+		</placeWorkers>
 		<researchPrerequisites>
 			<li>ComplexFurniture</li>
 		</researchPrerequisites>
@@ -855,7 +862,7 @@
 			<drawOffsetWest>(-0.9,0,0)</drawOffsetWest>
 			<drawOffsetEast>(0.9,0,0)</drawOffsetEast>
 			<damageData>
-			  <enabled>false</enabled>
+				<enabled>false</enabled>
 			</damageData>
 		</graphicData>
 		<uiIconPath>Outland/Buildings/Furniture/Stone/WallLampFlush_north</uiIconPath>
