@@ -111,7 +111,7 @@
             <drawOffset>(0.0, 0.0, 0.05)</drawOffset>
 		</graphicData>
 		<size>(2,1)</size>
-		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<altitudeLayer>BuildingBelowTop</altitudeLayer>
 		<socialPropernessMatters>true</socialPropernessMatters>
 		<fillPercent>0.45</fillPercent>
 		<defaultPlacingRot>South</defaultPlacingRot>
@@ -158,11 +158,11 @@
 		<defaultPlacingRot>South</defaultPlacingRot>
 		<uiIconScale>0.65</uiIconScale>
 		<uiIconOffset>(0, 0.30)</uiIconOffset>
-		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<altitudeLayer>BuildingBelowTop</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<castEdgeShadows>true</castEdgeShadows>
 		<staticSunShadowHeight>0.15</staticSunShadowHeight>
-		<fillPercent>1</fillPercent>
+		<fillPercent>0.8</fillPercent>
 		<canOverlapZones>false</canOverlapZones>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 		<statBases>
@@ -417,7 +417,7 @@
 		<castEdgeShadows>false</castEdgeShadows>
 		<defaultPlacingRot>South</defaultPlacingRot>
 		<tickerType>Normal</tickerType>
-		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<altitudeLayer>BuildingBelowTop</altitudeLayer>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<pathCost>60</pathCost>
 		<statBases>
@@ -501,7 +501,7 @@
 		</graphicData>
 		<uiIconScale>0.9</uiIconScale>
 		<rotatable>false</rotatable>
-		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<altitudeLayer>BuildingBelowTop</altitudeLayer>
 		<passability>Standable</passability>
 		<constructEffect>ConstructWood</constructEffect>
 		<tickerType>Normal</tickerType>
@@ -648,7 +648,7 @@
 			<drawSize>(3.5, 3.5)</drawSize>
 			<drawOffset>(0.0, 0.0, 1.2)</drawOffset>
 		</graphicData>
-		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<altitudeLayer>BuildingBelowTop</altitudeLayer>
 		<uiIconScale>0.3</uiIconScale>
 		<rotatable>false</rotatable>
 		<passability>PassThroughOnly</passability>
@@ -755,6 +755,7 @@
 				<cornerBL>Damage/Corner</cornerBL>
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
+			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<uiIconScale>0.8</uiIconScale>
 		<statBases>
@@ -776,6 +777,30 @@
 		<comps>
 			<li>
 				<compClass>CompGatherSpot</compClass>
+			</li>
+			<li Class="TabulaRasa.CompProperties_ExtraGraphics">
+				<extraGraphics>
+					<li>
+						<label>Default</label>
+						<path>Outland/FurnitureAndDecor/Buildings/WoodFurniture/TableSmallRect</path>
+					</li>
+					<li>
+						<label>Red Cloth</label>
+						<path>Outland/FurnitureAndDecor/Buildings/WoodFurniture/TableSmallRect_ClothRed</path>
+					</li>
+					<li>
+						<label>Blue Cloth</label>
+						<path>Outland/FurnitureAndDecor/Buildings/WoodFurniture/TableSmallRect_ClothBlue</path>
+					</li>
+					<li>
+						<label>Green Cloth</label>
+						<path>Outland/FurnitureAndDecor/Buildings/WoodFurniture/TableSmallRect_ClothGreen</path>
+					</li>
+					<li>
+						<label>Purple Cloth</label>
+						<path>Outland/FurnitureAndDecor/Buildings/WoodFurniture/TableSmallRect_ClothPurple</path>
+					</li>
+				</extraGraphics>
 			</li>
 		</comps>
 		<researchPrerequisites>
@@ -1253,9 +1278,9 @@
 		<defaultPlacingRot>South</defaultPlacingRot>
 		<uiIconScale>0.65</uiIconScale>
 		<uiIconOffset>(0, 0.30)</uiIconOffset>
-		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<altitudeLayer>BuildingBelowTop</altitudeLayer>
 		<passability>PassThroughOnly</passability>
-		<fillPercent>1</fillPercent>
+		<fillPercent>0.8</fillPercent>
 		<castEdgeShadows>true</castEdgeShadows>
 		<staticSunShadowHeight>0.15</staticSunShadowHeight>
 		<surfaceType>Item</surfaceType>
@@ -1312,9 +1337,9 @@
 		<defaultPlacingRot>South</defaultPlacingRot>
 		<uiIconScale>0.65</uiIconScale>
 		<uiIconOffset>(0, 0.30)</uiIconOffset>
-		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<altitudeLayer>BuildingBelowTop</altitudeLayer>
 		<passability>PassThroughOnly</passability>
-		<fillPercent>1</fillPercent>
+		<fillPercent>0.8</fillPercent>
 		<castEdgeShadows>true</castEdgeShadows>
 		<staticSunShadowHeight>0.15</staticSunShadowHeight>
 		<surfaceType>Item</surfaceType>

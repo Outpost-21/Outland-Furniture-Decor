@@ -17,9 +17,9 @@
 		<defaultPlacingRot>South</defaultPlacingRot>
 		<uiIconScale>0.6</uiIconScale>
 		<uiIconOffset>(0, 0.30)</uiIconOffset>
-		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<altitudeLayer>BuildingBelowTop</altitudeLayer>
 		<passability>PassThroughOnly</passability>
-		<fillPercent>1</fillPercent>
+		<fillPercent>0.8</fillPercent>
 		<castEdgeShadows>true</castEdgeShadows>
 		<staticSunShadowHeight>0.15</staticSunShadowHeight>
 		<canOverlapZones>false</canOverlapZones>
@@ -195,7 +195,7 @@
 		<defaultPlacingRot>South</defaultPlacingRot>
 		<tickerType>Normal</tickerType>
 		<drawerType>MapMeshAndRealTime</drawerType>
-		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<altitudeLayer>BuildingBelowTop</altitudeLayer>
 		<pathCost>60</pathCost>
 		<statBases>
 			<MaxHitPoints>80</MaxHitPoints>
@@ -275,7 +275,7 @@
 		</graphicData>
 		<uiIconScale>0.9</uiIconScale>
 		<rotatable>false</rotatable>
-		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<altitudeLayer>BuildingBelowTop</altitudeLayer>
 		<passability>Standable</passability>
 		<constructEffect>ConstructWood</constructEffect>
 		<tickerType>Normal</tickerType>
@@ -424,7 +424,7 @@
 			<drawSize>(3.5, 3.5)</drawSize>
 			<drawOffset>(0.0, 0.0, 1.2)</drawOffset>
 		</graphicData>
-		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<altitudeLayer>BuildingBelowTop</altitudeLayer>
 		<uiIconScale>0.3</uiIconScale>
 		<rotatable>false</rotatable>
 		<passability>PassThroughOnly</passability>
@@ -956,9 +956,9 @@
 		<defaultPlacingRot>South</defaultPlacingRot>
 		<uiIconScale>0.6</uiIconScale>
 		<uiIconOffset>(0, 0.30)</uiIconOffset>
-		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<altitudeLayer>BuildingBelowTop</altitudeLayer>
 		<passability>PassThroughOnly</passability>
-		<fillPercent>1</fillPercent>
+		<fillPercent>0.8</fillPercent>
 		<castEdgeShadows>true</castEdgeShadows>
 		<staticSunShadowHeight>0.15</staticSunShadowHeight>
 		<surfaceType>Item</surfaceType>
@@ -1015,9 +1015,9 @@
 		</graphicData>
 		<size>(1,1)</size>
 		<defaultPlacingRot>South</defaultPlacingRot>
-		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<altitudeLayer>BuildingBelowTop</altitudeLayer>
 		<passability>PassThroughOnly</passability>
-		<fillPercent>1</fillPercent>
+		<fillPercent>0.8</fillPercent>
 		<castEdgeShadows>true</castEdgeShadows>
 		<uiIconScale>0.6</uiIconScale>
 		<uiIconOffset>(0, 0.30)</uiIconOffset>
